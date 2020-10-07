@@ -1,0 +1,42 @@
+#main {
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+}
+
+#PlayerChoice,
+#computerChoice,
+#winner {
+    width: 70%;
+    border-radius: 3px;
+    margin: 2px;
+    padding: 0.5rem;
+    text-align: center;
+    color: white;
+    display: none;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+#PlayerChoice {
+    background-color: #FF7F50;
+}
+
+#computerChoice {
+    background-color: #3CB371;
+}
+
+#winner {
+    background-color: #DAA520;
+}
+
+#start-game-btn {
+    width: 50%;
+    font-size: 20px;
+    text-decoration: none;
+    padding: 20px;
+    color: white;
+    border: none;
+    background-color: #BC8F8F;
+}
