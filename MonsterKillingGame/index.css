@@ -1,0 +1,79 @@
+*{
+    box-sizing: border-box;
+    margin:0;
+    padding:0;
+}
+body{
+    background-color:black;
+}
+header{
+    background-color: #7d0633;
+    text-align:center;
+    color:white;
+    padding:1rem;
+    font-family: 'Press Start 2P', cursive;
+    margin-bottom:5rem;
+}
+#displayLevels{
+    display: flex;
+    flex-direction: row;
+    justify-content:space-evenly;
+}
+.vertical{
+    /* transform: rotate(270deg); */
+    appearance: progress;
+    width:25rem;
+    height:6rem;
+    transition:all 0.2s;
+}
+.flex-item{
+    height: 4rem;
+    border:none;
+    border-radius: 1rem;
+    background-color:#31112c;
+    font-family: 'Bebas Neue', cursive;
+    font-size:1.5rem;
+    cursor: pointer;
+    color:#fbdcc4;
+}
+.flex-item:focus{
+    outline: none;
+}
+.heading{
+    color:white;
+    font-family: 'Bebas Neue', cursive;
+}
+.messageArea{
+    display:none;
+    position: fixed;
+    z-index: 1;
+    left:0;
+    top:0;
+    overflow:auto;
+    transition:all 2s;
+    width:100%;
+    background-color: #1b262c;
+    
+}
+.messageText{
+    margin:18rem auto;
+    padding:0.5rem;
+    border:1px solid white;
+    border-radius: 1rem;
+    width:60%;
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    color:black;
+    font-size: 1rem;
+    font-weight: bolder;
+    background-color:#cf7500;
+    opacity: 0.6;
+    font-family: 'Comfortaa', cursive;
+}
+
+.close{
+    color:black;
+    font-size:3rem;
+    font-weight: bolder;
+}

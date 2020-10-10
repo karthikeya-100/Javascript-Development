@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">   
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@700&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <header><h1>Kill the Monster!!!</h1></header>
+    <div class="messageArea">
+        <div class="messageText">
+            <div class="textContainer mx-auto">
+                <p class=" actual-text"></p>
+                <p class="suggestion"></p>
+            </div>
+            <span class="close">&times;</span>
+        </div>
+    </div>
+    <section id="playArea container">
+        <div id="displayLevels">
+            <div class="progressContainer row">
+                <div class=" col-12 col-sm-12 col-md-6 col-lg-6">
+                    <h3 class="m-0 heading ml-5 ml-sm-5 ml-md-1">Monster Health</h3>
+                    <progress id="monsterProgress" class="vertical ml-5 ml-sm-5 ml-md-1" value="100" max="100">100%</progress>
+                </div>
+                <div class="col-12 col-sm-12 col-md-6 col-lg-6">
+                    <h3 class="m-0 heading ml-5 ml-sm-5 ml-md-1">Player Health</h3>
+                    <progress id="playerProgress" class="vertical ml-5 ml-sm-5 ml-md-1" value="100" max="100">100%</progress>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="controlArea">
+        <div class="d-flex flex-column container-md">
+            <button class="flex-item mb-2 w-50 mx-auto" id="attackBtn">Attack</button>
+            <button class="flex-item mb-2 w-50 mx-auto" id="strAttackBtn">Strong Attack</button>
+            <button class="flex-item mb-2 w-50 mx-auto" id="healBtn">Heal</button>
+            <button class="flex-item mb-2 w-50 mx-auto" id="resetBtn">Reset</button>
+        </div>
+    </section>
+    <script src="dataProvider.js" ></script>
+    <script src="app.js" ></script>
+</body>
+</html>
